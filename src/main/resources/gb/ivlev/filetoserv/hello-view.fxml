@@ -3,15 +3,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
-
-    <HBox layoutX="14.0" layoutY="91.0" prefHeight="283.0" prefWidth="180.0" />
-    <HBox layoutX="232.0" layoutY="91.0" prefHeight="283.0" prefWidth="180.0" />
-    <Button layoutX="14.0" layoutY="420.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Button" />
-    <Button layoutX="326.0" layoutY="420.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Button" />
-    <VBox layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="86.0" />
-    <VBox layoutX="326.0" layoutY="14.0" prefHeight="25.0" prefWidth="86.0" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="426.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      fx:controller="gb.ivlev.filetoserv.Client.ChatController"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <Button layoutX="14.0" layoutY="420.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="ToServ" />
+    <Button layoutX="326.0" layoutY="420.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="OutServ" />
+   <Button layoutX="352.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="Quit" />
+   <ListView layoutY="27.0" prefHeight="326.0" prefWidth="200.0" />
+   <ListView fx:id="listview" layoutX="226.0" layoutY="27.0" prefHeight="326.0" prefWidth="200.0" />
+   <TextField onAction="#sendMsg" fx:id="input" layoutX="139.0" layoutY="364.0" prefHeight="61.0" prefWidth="149.0" />
+   <Button layoutX="187.0" layoutY="433.0" mnemonicParsing="false" text="send" />
 
 
 </Pane>
