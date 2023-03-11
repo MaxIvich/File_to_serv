@@ -30,8 +30,6 @@ public class IoNet implements Closeable {
         os.write(msg.getBytes(StandardCharsets.UTF_8));
         os.flush();
     }
-
-
     void readMessages()  {
         try{ while (true) {
             int read = is.read(buf);
@@ -48,6 +46,7 @@ public class IoNet implements Closeable {
         try{is.close();
             os.close();
             socket.close();
+
 
         }catch (Exception e){
             e.printStackTrace();

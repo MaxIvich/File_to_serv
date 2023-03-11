@@ -10,7 +10,6 @@ public class ServerIo {
         System.out.println("Server started...");
          while(true){
              try {
-
                  Socket socket = server.accept();
                  System.out.println("Client connected ...");
 

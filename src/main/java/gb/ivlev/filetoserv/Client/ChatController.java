@@ -23,6 +23,11 @@ public class ChatController implements Initializable {
         net.sendMsg(input.getText());
         input.clear();
     }
+    public void quitMsg(ActionEvent actionEvent) throws IOException {
+        net.sendMsg("quit");
+
+
+    }
 
     private void addMessage(String msg){
         Platform.runLater(()-> listview.getItems().add(msg));
