@@ -21,7 +21,7 @@ public class ServerNio {
 
             Selector selector = Selector.open();
             serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-            System.out.println("Сервер стартовал на порту "+ port+". Ожидаем соединения...");
+            System.out.println("Сервер стартовал на порту. "+ port +" Ожидаем соединения....");
             while (true){
                 selector.select();
                 for(SelectionKey event : selector.selectedKeys()){
