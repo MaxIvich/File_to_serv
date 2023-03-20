@@ -3,6 +3,9 @@ module gb.ivlev.filetoserv {
     requires javafx.fxml;
     requires javafx.graphics;
     requires java.rmi;
+    requires io.netty.transport;
+    requires io.netty.buffer;
+    requires io.netty.codec;
 
     opens gb.ivlev.filetoserv to javafx.fxml;
     exports gb.ivlev.filetoserv.Client;
